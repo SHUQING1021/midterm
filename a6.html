@@ -25,6 +25,12 @@
         $('#slider').nivoSlider();
     });
     </script>
+    <script>
+      function show()
+      {
+        document.getElementById('t2').style.fontSize = t1.value+'px';
+      }
+    </script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2HQ6KFR7K"></script>
 <script>
@@ -68,10 +74,11 @@
         <div class="content_item">
           <h1>挑戰題</h1>
           <hr>
-          <p>
-            輸入數字：<input type="text" id="t1">
+          <p class="s3">
+            輸入數字：<input type="text" id="t1" onchange="show()" class="s2">
           </p>
-          <p id="t2">生日快樂</p>
+          <p id="t2" style="color: red;text-align: center;">生日快樂</p>
+
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
